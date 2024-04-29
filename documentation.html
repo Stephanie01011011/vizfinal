@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title"><h1 class="archivo-black-regular">Hotel Reservation Analysis</h1>
+        <div class="menu">
+        <ul class="archivo-black-regular">
+            <li><a href="index.html">Visualization </a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="wrapper">
+        <div class="questions archivo-black-regular">
+            <h1>Design Process</h1>
+            <h1>Rationale Of Design Choices</h1>
+            <h1>Discovery</h1>
+        </div>
+        <div class="answers">
+            <div class="sect" style="margin-top: 60px";">I first found the dataset that interested me on Kaggle. The data in this set describes hotel reservations and aims to answer the questions of “Who is more likely to cancel a reservation or not show up?”. As for the design of the visualizations, I looked through the data set and created a list of questions I wanted to answer. That list included cancellations by number of adults in the party, by number of children in the party, cancellations by month of the year, and cancellations by max and minimum average priced rooms. I decided to stick with 4 visualizations to keep it more concise and ended up leaving out the question of cancellations by number of children.</div>
+            <div class="sect">I went with 2 color palettes, blues and greens to have a little bit of difference between the 4 charts. I made sure to use flexible coloring in the creation of the charts making the lesser bars darker and the larger bars lighter. I chose a scatter plot for the visualization that deals with months because I thought it would be a more efficient way of displaying 12 ‘x-values’ than a bar chart with wider areas. The other questions could be more easily answered with simple bar charts.</div>
+            <div class="sect">So, to answer the big question, who is more likely to cancel, I knew I wanted to create at least 3 visualizations. The first questions I had was “Is there a correlation between the number of adults in a party and cancellations?” I wondered if more adults would lead to less cancelations due to the buddy system and I found that this was true. The reservations with only one adult had 471 recorded previous cancellations and it went down to 365 with two adults. Reservations with 3 and 4 adults had significantly less cancelations, with 11 and 1 being those results. Next, I looked at the booking status for people with and without previous cancellations. I found that people with previous cancelations are more likely not to cancel based on these results. People with previous cancelations next booking status was “not canceled” 24068 times and “canceled” 11869 times. When I looked at cancellations by month, I found that cancelations increase as the year goes on but in November and December cancelations decrease dramatically. Finally, cancelations by max and min average priced rooms shows that the minimum priced rooms have a higher rate of cancellations than the max priced rooms. After visualizing these pieces of data, I would recommend to the hotel to focus on the summer months, adding fees for cancelling on the cheaper rooms, and providing SMS messaging to reservations with only 1-2 adults in their party that reminds them of their reservation and ways to keep them from cancelling.</div>
+        </div>
+    </div>
+   
+</body>
+</html>
